@@ -189,12 +189,15 @@
     content:"";position:absolute;left:0;top:0;width:64%;height:78%;
     background-image:url('about-2.jpg');background-size:cover;background-position:center;
     border-radius:var(--radius-md);box-shadow:var(--shadow);
+    z-index:1;
   }
   .collage::after{
     content:"";position:absolute;right:0;bottom:0;width:46%;height:52%;
     background-image:url('about-1.jpg');background-size:cover;background-position:center;
     border-radius:var(--radius-md);box-shadow:var(--shadow);border:6px solid var(--cream);
+    z-index:2;
   }
+  .collage{overflow:visible;}
 
   .quote-line{
     margin-top:28px;padding-top:24px;border-top:1px solid var(--sage-line);
